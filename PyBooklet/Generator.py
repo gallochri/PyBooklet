@@ -98,7 +98,7 @@ class BookletGenerator(QThread):
         pages_count = pages.getNumPages()
 
         front_side_pages = zip(range(1, pages_count, 4), range(3, pages_count, 4))
-        back_side_pages = zip(range(0, pages_count, 4), range(2, pages_count, 4))
+        back_side_pages = zip(range(2, pages_count, 4), range(0, pages_count, 4))
 #        front_side_pages = zip(range(1, pages_count / 2, 2), range(pages_count - 2, 0, -2))
 #        back_side_pages = reversed(zip(range(0, pages_count, 2), range(pages_count - 1, pages_count / 2, -2)))
 
